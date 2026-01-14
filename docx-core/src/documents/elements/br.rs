@@ -15,6 +15,10 @@ impl Break {
     pub fn new(t: BreakType) -> Break {
         Break { break_type: t }
     }
+
+    pub fn break_type(&self) -> BreakType {
+        self.break_type
+    }
 }
 
 impl BuildXML for Break {
